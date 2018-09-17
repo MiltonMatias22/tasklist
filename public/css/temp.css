@@ -1,6 +1,10 @@
 
 /**
- * --------------- MY CSS STILY --------------
+ * --------------- MY CSS STYLE --------------
+ */
+
+ /**
+ * ===================== HOME STYLE =====================
  */
  header.masthead{
    padding-top: 150px;
@@ -54,3 +58,23 @@
         color: #FFFFFF;
 
       }
+
+      /**
+       * ===================== ABOUT STYLE =====================
+       */
+
+       /**
+        * --------------- HEADER PAGEHEADER --------
+        */
+        header.pagehead{
+          padding-top: 120px;
+          background-color: #CCC;
+          padding-bottom: 50px;
+          min-height: 200px;
+        }
+
+        section#about-instanceof{
+          padding-top: 100px;
+          padding-bottom: 100px;
+          min-height: 300px;
+        }

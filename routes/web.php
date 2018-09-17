@@ -1,4 +1,4 @@
- <?php
+  <?php
 
 /*
 |--------------------------------------------------------------------------
@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'StaticPageController@getHome');
+Route::get('/', 'StaticPageController@getHome')->name('home');
 
-Route::get('about', 'StaticPageController@getAbout');
+Route::get('about', 'StaticPageController@getAbout')->name('about');
 
-Route::get('contact', 'StaticPageController@getContact');
+Route::get('contact', 'StaticPageController@getContact')->name('contact');
