@@ -1,0 +1,56 @@
+
+/**
+ * --------------- MY CSS STILY --------------
+ */
+ header.masthead{
+   padding-top: 150px;
+   background-color: #CCC;
+   color: #FFFFFF;
+   text-align: center;
+   padding-bottom: 100px;
+   min-height: 800px;
+ }
+
+ /**
+  * --------------- ABOUT --------------------
+  */
+  section#about{
+    padding-top: 100px;
+    background-color: #E5E5E5;
+    min-height: 500PX;
+  }
+
+  /**
+   * --------------- ABOUT-APP ---------------
+   */
+   section#about-app{
+     padding-top: 100px;
+     background-color: #D5D5D5;
+     min-height: 500PX;
+   }
+
+   /**
+    * --------------- FUNCIONALITIES ---------
+    */
+    section#funcionalities{
+      padding-top: 100px;
+      min-height: 500PX;
+    }
+
+    /**
+     * --------------- FOOTER-ABOVE ---------
+     */
+     div.footer-above{
+       padding: 100px 0 100px 0;
+       background-color: #252525;
+       color: #FFFFFF;
+     }
+
+     /**
+      * --------------- FOOTER-BELOW --------
+      */
+      div.footer-below{
+        padding: 20px;
+        color: #FFFFFF;
+
+      }
