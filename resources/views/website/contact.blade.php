@@ -20,6 +20,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
+				<!-- Error alert-->
+				@include('partials.messages')
+
 				<h2>Formulário</h2>
 				<hr>
 				<form class="" action="{!! route('contact.send') !!}" method="post">
@@ -33,7 +36,7 @@
 						<input type="text" class="form-control" placeholder="Phone" name="phone">
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" col="30" row="10" name="menssage"></textarea>
+						<textarea class="form-control" col="30" row="10" name="bodyMessage"></textarea>
 					</div>
 					<div class="form-group">
 						<input type="submit" class="form-control btn btn-success" value="Enviar" >

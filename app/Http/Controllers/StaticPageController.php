@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mail\ContactMail;
+use Session;
+use Mail;
 
 class StaticPageController extends Controller
 {
@@ -23,15 +26,21 @@ class StaticPageController extends Controller
 
     public function postContact(Request $request)
     {
-    	$name = $request -> name;
-      $email = $request -> email;
-      $phone = $request -> phone;
-      $menssage = $request -> menssage;
+      //validate data request
+    	$fields = $request->validate([
+        'name'        =>'required|between:5,50',
+        'email'       =>'required|email|between:5,50',
+        'phone'       =>'required|numeric',
+        'bodyMessage' =>'required|min:5',
+      ]);
 
-      echo "<h3>Test Request</h3>";
-      echo "Name: " . $name ."<br>";
-      echo "Email: " . $email ."<br>";
-      echo "Phone: " . $phone ."<br>";
-      echo "Menssage: " . $menssage;
+      //Send email
+      Mail::to('nodout.develops@gmail.com')
+        -> send(new ContactMail($fields));
+        
+      //Success session message
+      Session::flash('success', 'Email enviado com sucesso!');
+
+      return redirect()->route('contact');
     }
 }
