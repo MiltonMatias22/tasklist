@@ -16,3 +16,5 @@ Route::get('/', 'StaticPageController@getHome')->name('home');
 Route::get('about', 'StaticPageController@getAbout')->name('about');
 
 Route::get('contact', 'StaticPageController@getContact')->name('contact');
+
+Route::post('contact', 'StaticPageController@postContact')->name('contact.send');

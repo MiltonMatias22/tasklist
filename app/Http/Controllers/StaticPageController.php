@@ -20,4 +20,18 @@ class StaticPageController extends Controller
     {
     	return view('website.contact');
     }
+
+    public function postContact(Request $request)
+    {
+    	$name = $request -> name;
+      $email = $request -> email;
+      $phone = $request -> phone;
+      $menssage = $request -> menssage;
+
+      echo "<h3>Test Request</h3>";
+      echo "Name: " . $name ."<br>";
+      echo "Email: " . $email ."<br>";
+      echo "Phone: " . $phone ."<br>";
+      echo "Menssage: " . $menssage;
+    }
 }

@@ -1,6 +1,4 @@
-<!--
-* ===================== ABOUT =====================
-*	-->
+
 <footer>
   <div class="footer-above">
     <div class="container">
