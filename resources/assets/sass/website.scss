@@ -1,0 +1,15 @@
+
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Components
+@import "website/components/head";
+@import "website/components/footer";
+
+//Helpers
+
+//Pages
+@import "website/pages/home";
+@import "website/pages/contact";
+@import "website/pages/about";
